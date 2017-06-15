@@ -1,0 +1,22 @@
+@html.extend('../layouts/default',function(mode){
+	@html.block('content',function(model){
+  	<div class="row">
+				<div class="single-grid col-xs-12">
+        <h2>Espace floral</h2>
+        <p>Avenue Jules-Crosnier 4,<br/>
+          1206 Genéve</p>
+          <h3>Ligne bus TPG</h3>
+          <ul>
+            <li><i>Contamines ou Florissant</i> ligne 1, 5, 8</li>
+          </ul>
+          <h3>Ligne Tram TPG</h3>
+          <ul>
+            <li><i>Villereuse</i> ligne 12 (15mn à pied) </li>
+          </ul>
+          <div id="map-section" style="height:400px; width:100%"></div>
+        </div>
+      </div>
+      <script src="js/map.js"></script>
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA98s4EGFZf5O_IAzpdcgcY-Xwb-oZyIe8&callback=initMaps"></script>
+    })
+})

@@ -1,0 +1,15 @@
+@html.extend('../layouts/default',function(mode){
+	@html.block('content',function(model){
+  		 	<div class="row">
+				<div class="single-grid col-xs-12">
+					<ul>
+						<li><a href="http://efapo.fr/" target="_blank">EFAPO | Ecole Française d&#039;Analyse Psycho-Organique</a></li>
+						<li><a href="http://www.sofrapsy.fr/" target="_blank">Société française des Analystes Psycho-Organique</a></li>
+						<li><a href="http://www.psychologies.com/Therapies/Toutes-les-therapies/Psychotherapies/Articles-et-Dossiers/L-analyse-psycho-organique"  target="_blank">Psychologies.con: Présentation de l'analyse psycho-organique</a></li>
+						<li><a href="http://www.etre-et-devenir.ch/"  target="_blank">Etre-et-devenir, MLC méthode de libération des cuirasses à Genève et Lausanne</a></li>
+						<li><a href="http://www.nospsys.ch" target="_blank">NosPsys.ch, site de recherche de psys avec recommandations de Clients</a></li>
+					</ul>
+				</div>
+			</div>
+    })
+})

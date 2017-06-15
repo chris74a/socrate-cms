@@ -1,0 +1,23 @@
+
+@html.extend('../layouts/default',function(mode){
+	@html.block('content',function(model){
+  <div class="single-top">
+						@if(model.data.post.image!=undefined){
+									<a href="#"><img class="img-responsive" src="@model.data.post.image" alt=" "></a>
+								}
+								else{
+									<a href="#"><img class="img-responsive" src="/blog/images/colibri.jpg" alt=" "></a>
+								}
+					<div class=" single-grid">
+						<h4>@model.data.post.title</h4>	
+						@if( model.data.post._.publishedDate!=null ){
+							<ul class="blog-ic">
+		  						<li><span><i class="glyphicon glyphicon-time"> </i>@model.data.post._.publishedDate.moment().lang('fr').format('ll')</span></li>	
+		  					</ul>	
+						}						
+						@html.raw(@model.data.post.content.extended)
+						<a role="button" class="btn btn-default a-1" href="/blog/@model.data.category">retour</a>
+					</div>    				
+				</div>
+    })
+})

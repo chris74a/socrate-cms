@@ -1,0 +1,21 @@
+@html.extend('../layouts/default',function(mode){
+	@html.block('content',function(model){
+  		 	<div class="row">
+				<div class="single-grid col-xs-12">
+          <div class="col-xs-12 col-md-4">
+					  <img src="/images/chemin.png" class="img-responsive thumbnail" alt="chemain de pétales de fleurs">
+          </div>
+          <h4>La psychothérapie est un voyage au coeur de sa propre subjectivité.</h4>
+
+<p>La thérapie est un temps pour vous où vous êtes invité à exprimer vos doutes, vos questionnements et votre vécu.<br/>
+Le thérapeute vous écoute chaleureusement et vous accueille dans votre entièreté. De cette rencontre émerge un processus où vous êtes amené à vous connecter en profondeur à votre monde intérieur. Cette connexion devient alors le moteur pour remettre en mouvement votre énergie de vie, trouver un sens à votre souffrance et avoir confiance en votre capacité à trouver des solutions dans les situations difficiles.</p>
+
+<h4>Le déroulement de la séance</h4>
+
+<p>La psychothérapie est une démarche qui vise aussi bien à traiter la souffrance que le développement personnel. Le thérapeute se positionne alors dans une écoute bienveillante et met en place un cadre de travail et un dispositif analytique basé sur l'inconscient et sur la régression.
+La séance dure 50 minutes.</p>
+
+				</div>
+			</div>
+    })
+})

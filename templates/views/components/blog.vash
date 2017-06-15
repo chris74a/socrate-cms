@@ -1,0 +1,32 @@
+	<div class="about-main">
+				<div class="col-md-12 about-left">
+					<div class="about-one">
+						<h3>@model.data.category.name</h3>
+					</div>
+					<div class="about-two">
+						@html.raw(model.data.category.content)
+					</div>	
+					<div class="about-tre">
+					@{
+					
+						var __rowCount = Math.ceil(model.data.posts.results.length / 2);
+						for( var __rowIter =1; __rowIter<=__rowCount;__rowIter++){
+							var __from = (__rowIter - 1) * 2;
+							var __currentPosts = model.data.posts.results.slice(__from, __from+2);
+                            var __model = {
+                                category:model.data.category.key,
+                                posts:__currentPosts
+                            };
+                            if( __currentPosts.length==1){
+                                @html.include('components/blog_onecol.vash',__model)
+                            }
+                            if( __currentPosts.length==2){
+                                @html.include('components/blog_twocol.vash',__model)
+                            }
+						}
+					}
+						
+					</div>	
+				</div>
+
+    </div>

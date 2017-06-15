@@ -1,0 +1,14 @@
+@html.extend('../layouts/default',function(mode){
+	@html.block('content',function(model){
+  	<div class="row">
+				<div class="single-grid col-xs-12">
+        <div class="col-xs-12 col-md-4">
+					  <img src="/images/portrait.jpg" class="img-responsive thumbnail" alt="portrait de Christophe ROTHENBURG">
+          </div>
+          <p>De mon point de vue, ce qui fait souffrir, ce n'est pas tant les difficultés que nous rencontrons durant notre vie, mais plutôt l'incapacité dans laquelle nous sommes à en sortir. Comme si nous n'étions pas responsable de notre vécu et pas maître de notre destin. </p>
+          <p>Je pense que l'Homme reste tout le temps dépendant. Pour exemple, aujourd'hui, il est très largement admis que l'argent est la condition pour "gagner" sa vie. Et cela vaut aussi pour ses névroses, qui peuvent parfois être une vraie entrave à notre propre liberté. De mon expérience, le processus thérapeutique consiste donc à vivre ses névroses plus consciement: c'est tout simplement se connaitre mieux. Par exemple, savoir que nous sommes structurés par des apects lumineux, mais aussi plus obscurs. Ainsi, nous vivons dans une énergie au service de la vie, et nous pouvons mettre en action notre imaginaire pour inventer un avenir dont nous nous sentons responsable.</p>
+          <p>Durant 4 ans, j'ai suivi une formation en Analyse psycho-organique à l'<a href="http://efapo.fr/" target="_blank">EFAPO</a>. Je trouve vraiment passionant le sujet de l'éthique - ce qui est juste- dans le métier de Thérapeute. Dans ce cadre, j'adhère à la <a href="http://www.sofrapsy.fr/" target="_blank">Sofrapsy</a>, Société Française des Analystes Psycho-Organique .</p>
+				</div>
+			</div>
+    })
+})

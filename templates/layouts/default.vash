@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Thérapie psychocorporelle - Christophe ROTHENBURG</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+
+	<link href="/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="/css/style.css" rel='stylesheet' type='text/css' />
+	<script src="/js/jquery.min.js"></script>
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="/js/move-top.js"></script>
+	<script type="text/javascript" src="/js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!--start-smoth-scrolling-->
+</head>
+
+<body>
+	@html.include('../components/ga')
+	<!--header-top-starts-->
+	<!--<div class="header-top">
+		<div class="container">
+			<div class="head-main">
+				<a href="index.html">Thérapie psychocorporelle - Christophe ROTHENBURG</a>
+			</div>
+		</div>
+	</div>-->
+	<!--header-top-end-->
+	@html.include('../components/navigation')
+	@html.include('../components/banner')
+	<!--start-single-->
+	<div class="single">
+		<div class="container">
+		 @html.block('content')
+		</div>
+	</div>
+	</div>
+	<!--end-single-->
+	<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<p><a href="index">Thérapeute psychocorporelle - Christophe ROTHENBURG</a> </p>
+			</div>
+		</div>
+	</div>
+	<!--footer-end-->
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

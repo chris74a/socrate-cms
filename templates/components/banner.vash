@@ -1,0 +1,13 @@
+<!--banner-starts-->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-top">
+                <img src="/images/masque.png" style="opacity:0.3; margin-top:20px;margin-bottom:20px;"/>
+				<div class="banner-text">
+					<h2>Thérapeute psychocorporelle</h2>
+					<h2>Christophe ROTHENBURG</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--banner-end-->

@@ -1,0 +1,7 @@
+
+@html.extend('../layouts/default',function(mode){
+	@html.block('content',function(model){
+		@html.include('components/blog.vash')
+
+    })
+})

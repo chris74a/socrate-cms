@@ -1,0 +1,16 @@
+@html.extend('../layouts/default',function(mode){
+	@html.block('content',function(model){
+   	<div class="row">
+				<div class="single-grid col-xs-12 col-md-offset-4 col-md-4">
+        <p>N'hésitez pas à me téléphoner pour prendre rendez-vous.</p>
+  		<ul style="list-style-type: none;margin-top: 10px;">
+      <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> christophe@psychotherapie-apo-geneve.ch</li>
+      <li><span class="glyphicon glyphicon-earphone " aria-hidden="true"></span> 077 417 79 14</li>
+      <li><a href="se_rendre_au_cabinet"><h2>Espace floral</h2>
+        <p>Avenue Jules-Crosnier 4,<br/>
+          1206 Genéve</p></li></a>
+      </ul>
+      	</div>
+			</div>
+    })
+})
